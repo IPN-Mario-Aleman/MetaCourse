@@ -1,0 +1,85 @@
+
+body {
+    background-color:beige;
+    }
+    
+    header{
+      height: 25vh;
+      text-align: center;
+    }
+    nav {
+      background-color:aquamarine;
+      border-radius: 1em;
+      color: gold;
+      padding: 0.5em 1em ;
+      margin: 1.5em;
+    
+      display:flex;
+      justify-content: space-around;
+    }
+    .nav-item{
+      
+      color: gold;
+      list-style-type: none;
+      font-size: 2em;
+    }
+    h1{
+      font-size: 2.5em;
+    }
+    h2{
+      font-size: 1.75em;
+    }
+    main{
+    
+      padding: 0.25em;
+    }
+    .section-1 {
+      background-image: url(assets/Asset\ 16@4x.png);
+      background-repeat:  repeat;
+      opacity: 0.75;
+      padding: 0.5em;
+      justify-content: center;
+      min-height: 20vh;
+      display:flex;
+      background-color: antiquewhite;
+    }
+    
+    .section-1 article{
+      padding: 0.5em;
+    }
+    .section-2 {
+      padding: 0.5em;
+      display: flex;
+      min-height: 25vh;
+      
+      justify-content: space-around;
+    }
+    
+    .section-2 article{
+      border-radius: 2em;
+      background-color:bisque;
+      padding: 0.5em 1.5em;
+      margin: 1em;
+    }
+    
+    footer{
+      
+      height: 10vh;
+      width: 100%;
+      display: flex;
+    }
+    
+    .footer-left-section{
+      flex-grow: 1;
+      margin:1em;
+     
+      padding: 0.5em;
+      
+    
+    }
+     .footer-right-section{
+      flex-grow: 1;
+      margin:1em;
+      padding: 0.5em;
+      text-align: right;
+    }

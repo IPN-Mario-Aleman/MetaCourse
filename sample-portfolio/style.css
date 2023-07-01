@@ -1,0 +1,230 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+body {
+    background-color: rgb(36, 36, 36);
+    color: rgb(255, 255, 255);
+}
+
+h1 {
+    font-size: calc(1.5rem + 1vw);
+}
+
+p {
+    font-size: 16px;
+    color: rgb(213, 213, 213);
+}
+
+button {
+    padding: 7px;
+    background-color: rgb(1, 160, 188);
+    color: aliceblue;
+    border-radius: 25px;
+    width: 80px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(0, 131, 154);
+}
+
+/* Header */
+header {
+    width: 100%;
+    height: 8rem;
+    display: flex;
+    place-content: center;
+}
+
+header > .logo_wrapper {
+    width: 80vw;
+    display: flex;
+    place-content: center;
+    margin-inline: auto;
+}
+
+header .logo {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    object-fit: contain;
+}
+
+/* Navigation */
+
+nav.navigation {
+    width: 90vw;
+    background-color: rgb(49, 49, 49);
+    border-radius: 10px;
+    margin-inline: auto;
+    padding: 10px;
+}
+
+.links {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    list-style: none;
+}
+
+a#menu {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    position: relative;
+}
+
+a#menu:hover {
+    color: rgb(219, 219, 219);;
+}
+
+/* main content */
+
+main {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    width: 90vw;
+    margin-inline: auto;
+}
+
+.promotional {
+    width: 100%;
+    position: relative;
+    margin-bottom: 1rem;
+}
+
+
+.promotional > .banner-promo > img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 30/9;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.promo-text {
+    position: absolute;
+    width: 80%;
+    height: 100%;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(22, 22, 22);
+    z-index: 21;
+}
+
+.promo-text > .wrapper-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.discount {
+    text-align: center;
+    transform: skewY(-3deg);
+    margin-bottom: 2rem;
+}
+
+.description-text {
+    width: 100%;
+}
+
+.wrapper-morph-effect {
+    position: relative;
+}
+
+.wrapper-morph-effect > p {
+    color: rgb(21, 21, 21);
+    position: absolute;
+}
+
+/* jewerly item to sell */
+
+.jewelry {
+    width: 100%;
+    margin-inline: auto;
+}
+
+.items {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(15rem, 100%), 1fr));
+    gap: 1rem;
+}
+
+.card_wrapper {
+    background-color: rgb(62, 62, 62);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.img-jw1 {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16/9;
+    object-fit: contain;
+}
+
+.img-jw2 {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16/9;
+    object-fit: contain;
+    transform: scale(0.85);
+    opacity: 0;
+}
+
+.footer-card {
+    display: flex;
+    justify-content: end;
+}
+
+/* footer */
+
+footer {
+    background-color: rgb(49, 49, 49);
+    padding: 10px 0px;
+}
+
+.footer_wrapper {
+    width: 90vw;
+    height: 7rem;
+    margin-inline: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+
+.sub_logo {
+    width: 100%;
+    max-width: 150px;
+    height: auto;
+    object-fit: contain;
+}
+
+/* responsive design */
+
+@media screen and (max-width: 768px) {
+    .promotional > img {
+        aspect-ratio: 20/9;
+    }
+}
+
+@media screen and (max-width: 554px) {
+    .promotional > img {
+        aspect-ratio: 16/9;
+    }
+
+    .footer_wrapper {
+        flex-direction: column;
+    }
+}
